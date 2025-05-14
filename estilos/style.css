@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    background-image: linear-gradient(to bottom right, #1a1a1a, #3a3a3a);
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Monospace', monospace;
+    line-height: 1.5;
+}
+
+section {
+    margin: 0 15vw;
+    padding: 50px;
+    text-align: center;
+}
+
+section h1 {
+    margin-bottom: 50px;
+    font-size: 3em;
+    text-align: center;
+}
+section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+section .container .card {
+    border-radius: 5px;
+    background-color: #3a3a3a9c;
+    border: 1px solid #555;
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+section .container .card h2 {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    color: #ffffff;
+}
+
+section .container .card a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+section .container .card:hover {
+    transform: scale(1.05);
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#card-html {
+    background-color: #a66c00;
+}
+
+#card-js {
+    background-color: #a69b00;
+}
+
+#card-css {
+    background-color: #2471ff;
+}
+
+#card-c {
+    background-color: #00a6a6;
+}
+
+footer {
+    font: 13px 'Arial', sans-serif;
+    background-color: #3a3a3a00;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
