@@ -11,30 +11,57 @@ html,
 body {
     scroll-behavior: smooth;
     font: 1em 'Arial', sans-serif;
-    color: #ffffff;
     line-height: 1.2;
     background-color: #000000;
-    background-image: url('https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url("https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Section */
+
+main {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Section */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+    border: 1px solid #00ff73;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
 section {
     margin: 50px 250px;
 }
 
 section h1 {
+    color: white;
     font-size: 3em;
     text-align: center;
-    margin-bottom: 20px;
-}
-
-section > p {
-    font-size: 0.8em;
-    text-align: center;
-    margin-bottom: 40px;
 }
 
 section .container {
@@ -46,48 +73,58 @@ section .container {
 }
 
 section .container .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     border-radius: 5px;
-    background-color: #3a3a3a9c;
-    border: 1px solid #555;
+    border: 2px solid #00ffff;
     width: 300px;
+    height: 300px;
     padding: 20px;
     transition: transform 0.3s ease;
+    box-shadow: 0 0px 25px #00ffff73;
+}
+
+section .container .card i {
+    font-size: 64px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    padding-right: 10px;
 }
 
 section .container .card h2 {
-    margin-bottom: 10px;
-    font-size: 1.4em;
+    border: 1px dotted yellow;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 3em;
     color: #ffffff;
 }
 
+section .container .card .status {
+
+}
+
 section .container .card a {
-    color: #ffffff;
     text-decoration: none;
-    font-size: 1.2em;
 }
 
 section .container .card:hover {
     transform: scale(1.05);
-    background-color: rgba(53, 53, 53, 0.719);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#andamento {
-    background-color: #23ff8691;
+section .container .card:hover h2 {
+    text-shadow: 0px 0px 10px #ffffff;
+    transition: 0.3s;
 }
 
-#andamento a {
-    color: #ffffff;
+section .container .card:hover i {
+    color: #ff00d4;
+    text-shadow: 0px 0px 50px #ff00d4;
+    transition: 0.3s;
 }
 
-#andamento h2 {
-    color: #ffffff;
-}
-
-#andamento:hover {
-    background-color: #23ff869c;
-}
 
 /* Rodapé */
 
@@ -100,19 +137,4 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-@media (max-width: 768px) {
-    section {
-        margin: 25px 10px;
-    }
-
-    section .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    section .container .card {
-        width: 90%;
-    }
 }
