@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-titles: 'Open Sans', sans-serif;
+    --font-paragraphs: 'Roboto', sans-serif;
+    --font-size-titles: 46px;
+    --font-size-navbars: 18px;
+    --font-size-paragraphs: 16px;
+
+    --font-color-titles: rgb(199, 199, 199);
+    --font-color-paragraphs: rgb(199, 199, 199);
+    --header-color: #25171e; /* Dark Blue */
+    --nav-hover-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #381b2c, #311722);
+}
+
+header {
+    margin-bottom: 35px;
+    padding: 32px 0;
+
+    background-color: var(--header-color);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.315);
+}
+
+header .conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 270px;
+}
+
+header .conteudo .logo {
+    font-weight: 800;
+    font-size: var(--font-size-titles);
+
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.397);
+}
+
+header .conteudo nav {
+    display: flex;
+    gap: 25px;
+
+    font-weight: 600;
+    font-size: var(--font-size-navbars);
+
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.397);
+}
+
+header .conteudo a {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: var(--font-color-titles);
+}
+
+header .conteudo nav > a:hover {
+    color: var(--nav-hover-color);
+}
+
+main {
+    margin: 0 270px;
+}
+
+main nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    padding: 5px 8px;
+
+    background-image: linear-gradient(to right, #913b70, #6e0f4a);
+
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.301);
+}
+
+
+main nav a{
+    font-size: 13px;
+    font-weight: 500;
+
+    text-transform: capitalize;
+    text-decoration: none;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.301);
+
+    color: var(--font-color-paragraphs);
+}
+
+main nav a:hover {
+    text-decoration: underline;
+
+    color: white;
+}
+
+main nav form {
+    display: flex;
+}
+
+main nav form input {
+    font-family: var(--font-color-paragraphs);
+    font-size: 18px;
+    font-style: italic;
+
+    text-transform: lowercase;
+    text-shadow: 1px 1px 1px rgba(143, 137, 139, 0.24);
+
+    padding: 5px;
+
+    color: black;
+    background-color: #823157;
+
+    border: none;
+    border-radius: 3px;
+}
+
+main nav form button {
+    width: 30px;
+    height: 30px;
+
+    background-color: #311022;
+
+    border: none;
+    border-radius: 3px;
+}
+
+main .home-cluster h2 {
+    font-size: 15px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    margin: 50px 0 20px 0;
+
+    color: white;
+}
+
+main .home-cluster {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .home-cluster .cluster-container {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+main .home-cluster .cluster-container .app-banner .banner-img {
+    display: block;
+    width: 650px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.548);
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.527);
+
+    transition: opacity 0.05s ease-in-out;
+    opacity: 1;    
+}
+
+main .home-cluster .cluster-container .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    height: 350px;
+
+    background-color: #20020f7a;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.377);
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main .home-cluster .cluster-container .info .app-name {
+    font-size: 25px;
+
+    margin: 10px 0 0 20px;
+
+    color: white;
+} 
+
+main .home-cluster .cluster-container .info .app-screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+main .home-cluster .cluster-container .info .app-screenshots .screenshot {
+    opacity: 50%;
+    width: 140px;
+}
+
+main .home-cluster .cluster-container .info .app-screenshots .screenshot:hover {
+    transition: .3s;
+    opacity: 100%;
+}
+
+main .home-cluster .cluster-container .info .about {
+    font-size: 12px;
+
+    margin: 20px 0 10px 20px;
+
+    color: white;
+}

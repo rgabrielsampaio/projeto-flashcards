@@ -1,11 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studycards</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/beef5830be.js" crossorigin="anonymous"></script>
+    <title>GS² Gabriel Sampaio Games Store</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="conteudo">
+            <div class="logo">
+                <a href="#">GS²</a>
+            </div>
+            <nav>
+                <a href="/index.html" class="active">loja</a>
+                <a href="#" class="active">chat</a>
+                <a href="#" class="active">carrinho</a>
+                <a href="#" class="active">suporte</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <a href="#">sua loja</a>
+            <a href="#">lista de desejos</a>
+            <a href="#">categorias</a>
+            <a href="#">trocar pontos</a>
+            <a href="#">notícias</a>
+            <a href="#">experimental</a>
+            <form action="resultados.html" method="get">
+                <input type="text" name="q" placeholder="Pesquisar..."/>
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #77345e;"></i>
+                </button>
+            </form>
+        </nav>
+        <section class="home-cluster">
+            <div class="conteudo">
+                <h2>destaques e recomendados</h2>
+                <div class="cluster-container">
+                    <picture class="app-banner">
+                        <img src="imagens/gta-6-banner.jpg" class="banner-img" id="main-banner" alt="Grand Theft Auto 6">
+                    </picture>
+                    <div class="info">
+                        <div class="app-name">Grand Theft Auto VI</div>
+                        <picture class="app-screenshots">
+                            <img src="imagens/Jason_Duval_02.webp" class="screenshot" data-banner="imagens/Jason_Duval_02.webp" alt="Grand Theft Auto 6 Screenshot 1">
+                            <img src="imagens/Vice_City_01.webp" class="screenshot" data-banner="imagens/Vice_City_01.webp" alt="Grand Theft Auto 6 Screenshot 2">
+                            <img src="imagens/Vice_City_03.webp" class="screenshot" data-banner="imagens/Vice_City_03.webp" alt="Grand Theft Auto 6 Screenshot 3">
+                            <img src="imagens/Vice_City_06.webp" class="screenshot" data-banner="imagens/Vice_City_06.webp" alt="Grand Theft Auto 6 Screenshot 4">
+                        </picture>
+                        <div class="about">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ipsam quas consequuntur mollitia asperiores cum deleniti iste exercitationem, quia odio officia hic, incidunt possimus repudiandae.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside>
+
+    </aside>
+    <aside>
+
+    </aside>
+<script>
+    const screenshots = document.querySelectorAll('.screenshot');
+    const mainBanner = document.getElementById('main-banner');
+    const originalBanner = mainBanner.getAttribute('src');
+
+    function fadeToImage(newSrc) {
+        mainBanner.style.opacity = 0;
+
+        setTimeout(() => {
+            mainBanner.setAttribute('src', newSrc);
+            mainBanner.style.opacity = 1;
+        }, 50); //
+    }
+
+    screenshots.forEach(img => {
+        img.addEventListener('mouseover', () => {
+            const newBanner = img.getAttribute('data-banner');
+            fadeToImage(newBanner);
+        });
+
+        img.addEventListener('mouseleave', () => {
+            fadeToImage(originalBanner);
+        });
+    });
+</script>
+
 </body>
+
+
+
 </html>
