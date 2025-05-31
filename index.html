@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/beef5830be.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>GSTOO Gabriel Sampaio Games Store</title>
 </head>
 <body>
@@ -22,31 +22,32 @@
 
     </section>
 
+    <section class="search-bar">
+
+        <form>
+            <div class="search-container">
+                <i class="fa fa-search"></i>
+                <input type="text" name="search" id="search" placeholder="Pesquisar loja">
+            </div>
+        </form>
+
+    </section>
+
     <nav>
+
         <span>
             <a href="#"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
         </span>
         <span>
             <a href="#"><i class="fa-solid fa-user fa-lg"></i></a>
         </span>
-        <button type="button">Criar conta</button>
+        <button class="login" type="button">Entrar</button>
+        <button class="register" type="button">Criar conta</button>
+
     </nav>
 
 </header>
 <main>
-
-    <section class="search-bar">
-
-        <form>
-            <div class="search-container">
-                <i class="fa fa-search"></i>
-                <input type="text" name="search" id="search" placeholder="Procurar jogos...">
-            </div>
-        </form>
-
-    </section>
-
-    <h1 id="highlights-h1">Destaques</h1>
 
     <section class="highlights">
 
@@ -55,29 +56,28 @@
         </section>
 
         <section class="right">
-
+            
             <h2>Grand Theft Auto VI</h2>
-            <hr>
-                <div class="game-screenshots">
-                    <figure>
-                        <img src="imagens/Jason_Duval_02.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="imagens/Leonida_Keys_05.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="imagens/Lucia_Caminos_02.jpg" alt="">
-                    </figure>
-                    <figure>
-                        <img src="imagens/Vice_City_03.jpg" alt="">
-                    </figure>
-                </div>
-            <hr>
+
+            <div class="game-screenshots">
+                <figure>
+                    <img src="imagens/Jason_Duval_02.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="imagens/Leonida_Keys_05.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="imagens/Lucia_Caminos_02.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="imagens/Vice_City_03.jpg" alt="">
+                </figure>
+            </div>
             <strong>R$ 359,90</strong>
             <section class="purchase-section">
-                <button class="wishlist-button">
-                    <i class="fa-solid fa-heart"></i>
-                    Lista de desejos
+                <button class="cart-button">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Adicionar ao carrinho
                 </button>
                 <button class="buy-button">
                     <i class="fa-solid fa-dollar-sign"></i>
@@ -89,89 +89,74 @@
 
     </section>
 
-    <hr>
-
     <section class="trending-section">
 
-        <h1>Em alta</h1>
+        <h1>Jogos em alta</h1>
 
         <section class="trending-games">
 
             <article>
                 <figure>
-                    <img src="" alt="">
+                    <img src="imagens/cyberpunk.png" alt="">
                 </figure>
-                <h2>Game Title</h2>
-                <p>Game description goes here.</p>
-                <strong>359,90</strong>
+                <h2>Cyberpunk 2077</h2>
+                <p>RPG de mundo aberto ambientado em uma metrópole futurista.</p>
+                <strong>R$ 359,90</strong>
             </article>
 
             <article>
                 <figure>
-                    <img src="" alt="">
+                    <img src="imagens/revillage.png" alt="">
                 </figure>
-                <h2>Game Title</h2>
-                <p>Game description goes here.</p>
-                <strong>359,90</strong>
+                <h2>Resident Evil Village</h2>
+                <p>Survival horror game ambientado em uma vila misteriosa.</p>
+                <strong>R$ 359,90</strong>
             </article>
 
             <article>
                 <figure>
-                    <img src="" alt="">
+                    <img src="imagens/tloup1.png" alt="">
                 </figure>
-                <h2>Game Title</h2>
-                <p>Game description goes here.</p>
-                <strong>359,90</strong>
+                <h2>The Last of Us Part I</h2>
+                <p>Remake do aclamado jogo de ação e aventura.</p>
+                <strong>R$ 359,90</strong>
             </article>
 
             <article>
                 <figure>
-                    <img src="" alt="">
+                    <img src="imagens/sh2.png" alt="">
                 </figure>
-                <h2>Game Title</h2>
-                <p>Game description goes here.</p>
-                <strong>359,90</strong>
+                <h2>Silent Hill 2</h2>
+                <p>Remake do clássico jogo de terror psicológico.</p>
+                <strong>R$ 359,90</strong>
             </article>
 
             <article>
                 <figure>
-                    <img src="" alt="">
+                    <img src="imagens/er.jpg" alt="">
                 </figure>
-                <h2>Game Title</h2>
-                <p>Game description goes here.</p>
-                <strong>359,90</strong>
+                <h2>Elden Ring</h2>
+                <p>RPG de ação e aventura em mundo aberto.</p>
+                <strong>R$ 359,90</strong>
             </article>
 
             <article>
                 <figure>
-                    <img src="" alt="">
+                    <img src="imagens/gtav.jpg" alt="">
                 </figure>
-                <h2>Game Title</h2>
-                <p>Game description goes here.</p>
-                <strong>359,90</strong>
-            </article>
-
-            <article>
-                <figure>
-                    <img src="" alt="">
-                </figure>
-                <h2>Game Title</h2>
-                <p>Game description goes here.</p>
-                <strong>359,90</strong>
+                <h2>Grand Theft Auto V</h2>
+                <p>Jogo de ação e aventura em mundo aberto.</p>
+                <strong>R$ 359,90</strong>
             </article>
 
         </section>
     </section>
-
-    <hr>
 
     <section class="advertising-section">
         <figure>
             <img src="" alt="">
         </figure>
     </section>
-
-    <hr>
 
     <section class="developers-section">
 
@@ -199,8 +184,6 @@
 
     </section>
     
-    <hr>
-
     <section class="next-section">
 
         <h1>Próximos lançamentos</h1>
