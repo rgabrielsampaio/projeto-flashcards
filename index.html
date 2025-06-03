@@ -5,191 +5,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
     <title>GSTOO Gabriel Sampaio Games Store</title>
 </head>
+
 <body>
-<header>
-
-    <section class="logo-section">
-
-        <figure>
-            <img src="imagens/logo-white.png" alt="">
-        </figure>
-
-    </section>
-
-    <section class="search-bar">
-
-        <form>
-            <div class="search-container">
-                <i class="fa fa-search"></i>
-                <input type="text" name="search" id="search" placeholder="Pesquisar loja">
-            </div>
-        </form>
-
-    </section>
-
-    <nav>
-
-        <span>
-            <a href="#"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
-        </span>
-        <span>
-            <a href="#"><i class="fa-solid fa-user fa-lg"></i></a>
-        </span>
-        <button class="login" type="button">Entrar</button>
-        <button class="register" type="button">Criar conta</button>
-
-    </nav>
-
-</header>
-<main>
-
-    <section class="highlights">
-
-        <section class="left">
-            <img src="imagens/gta-6-banner.jpg" id="main-banner" alt="Banner principal">
+    <header>
+        <section class="logo-section">
+            <picture>
+                <source media="(max-width: 800px)" srcset="imagens/logo-mobile.png">
+                <img src="imagens/logo-white.png" alt="Logotipo do Site">
+                
+            </picture>
         </section>
 
-        <section class="right">
-            
-            <h2>Grand Theft Auto VI</h2>
+        <nav>
+            <span>
+                <a href="#">
+                    <p>Carrinho (4)</p><i class="fa-solid fa-cart-shopping fa-lg"></i>
+                </a>
+            </span>
+            <span>
+                <a href="#">
+                    <p>Minha conta</p><i class="fa-solid fa-user fa-lg"></i>
+                </a>
+                
+            </span>
+            <button class="login" type="button">Entrar</button>
+            <button class="register" type="button">Criar conta</button>
+        </nav>
 
-            <div class="game-screenshots">
-                <img class="screenshot" src="imagens/Jason_Duval_02.jpg" data-src="imagens/Jason_Duval_02.jpg" alt="Jason Duval">
-                <img class="screenshot" src="imagens/Leonida_Keys_05.jpg" data-src="imagens/Leonida_Keys_05.jpg" alt="Leonida Keys">
-                <img class="screenshot" src="imagens/Lucia_Caminos_02.jpg" data-src="imagens/Lucia_Caminos_02.jpg" alt="Lucia Caminos">
-                <img class="screenshot" src="imagens/Vice_City_03.jpg" data-src="imagens/Vice_City_03.jpg" alt="Vice City">
-            </div>
-            <strong>R$ 359,90</strong>
-            <section class="purchase-section">
-                <button class="cart-button">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    Adicionar ao carrinho
-                </button>
-                <button class="buy-button">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                    Comprar
-                </button>
+    </header>
+    <main>
+        
+        <div class="box">
+            <form class="search-box">
+                <input type="text" placeholder="Pesquisar loja">
+                <label for="" class="icon">
+                    <i class="fas fa-search"></i>
+                </label>
+            </form>
+        </div>
+
+        <section class="highlights">
+
+            <section class="left">
+                <img src="imagens/gta-6-banner.jpg" id="main-banner" alt="Banner principal">
+            </section>
+
+            <section class="right">
+
+                <h2>Grand Theft Auto VI</h2>
+
+                <div class="game-screenshots">
+                    <img class="screenshot" src="imagens/Jason_Duval_02.jpg" data-src="imagens/Jason_Duval_02.jpg"
+                        alt="Jason Duval">
+                    <img class="screenshot" src="imagens/Leonida_Keys_05.jpg" data-src="imagens/Leonida_Keys_05.jpg"
+                        alt="Leonida Keys">
+                    <img class="screenshot" src="imagens/Lucia_Caminos_02.jpg" data-src="imagens/Lucia_Caminos_02.jpg"
+                        alt="Lucia Caminos">
+                    <img class="screenshot" src="imagens/Vice_City_03.jpg" data-src="imagens/Vice_City_03.jpg"
+                        alt="Vice City">
+                </div>
+                <strong>R$ 359,90</strong>
+                <section class="purchase-section">
+                    <button class="cart-button">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Adicionar ao carrinho
+                    </button>
+                    <button class="buy-button">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        Comprar
+                    </button>
+                </section>
+
             </section>
 
         </section>
 
-    </section>
+        <section class="trending-section">
 
-    <section class="trending-section">
+            <h1>Jogos em alta <i class="fa-solid fa-caret-right"></i></h1>
 
-        <h1>Jogos em alta <i class="fa-solid fa-caret-right"></i></h1>
+            <section class="trending-games">
 
-        <section class="trending-games">
+                <article>
+                    <figure>
+                        <img src="imagens/cyberpunk.png" alt="">
+                    </figure>
+                    <h2>Cyberpunk 2077</h2>
+                    <p>RPG de mundo aberto ambientado em uma metrópole futurista.</p>
+                    <strong>R$ 359,90</strong>
+                </article>
 
-            <article>
-                <figure>
-                    <img src="imagens/cyberpunk.png" alt="">
-                </figure>
-                <h2>Cyberpunk 2077</h2>
-                <p>RPG de mundo aberto ambientado em uma metrópole futurista.</p>
-                <strong>R$ 359,90</strong>
-            </article>
+                <article>
+                    <figure>
+                        <img src="imagens/revillage.png" alt="">
+                    </figure>
+                    <h2>Resident Evil Village</h2>
+                    <p>Survival horror game ambientado em uma vila misteriosa.</p>
+                    <strong>R$ 359,90</strong>
+                </article>
 
-            <article>
-                <figure>
-                    <img src="imagens/revillage.png" alt="">
-                </figure>
-                <h2>Resident Evil Village</h2>
-                <p>Survival horror game ambientado em uma vila misteriosa.</p>
-                <strong>R$ 359,90</strong>
-            </article>
+                <article>
+                    <figure>
+                        <img src="imagens/tloup1.png" alt="">
+                    </figure>
+                    <h2>The Last of Us Part I</h2>
+                    <p>Remake do aclamado jogo de ação e aventura.</p>
+                    <strong>R$ 359,90</strong>
+                </article>
 
-            <article>
-                <figure>
-                    <img src="imagens/tloup1.png" alt="">
-                </figure>
-                <h2>The Last of Us Part I</h2>
-                <p>Remake do aclamado jogo de ação e aventura.</p>
-                <strong>R$ 359,90</strong>
-            </article>
+                <article>
+                    <figure>
+                        <img src="imagens/sh2.png" alt="">
+                    </figure>
+                    <h2>Silent Hill 2</h2>
+                    <p>Remake do clássico jogo de terror psicológico.</p>
+                    <strong>R$ 359,90</strong>
+                </article>
 
-            <article>
-                <figure>
-                    <img src="imagens/sh2.png" alt="">
-                </figure>
-                <h2>Silent Hill 2</h2>
-                <p>Remake do clássico jogo de terror psicológico.</p>
-                <strong>R$ 359,90</strong>
-            </article>
+                <article>
+                    <figure>
+                        <img src="imagens/er.jpg" alt="">
+                    </figure>
+                    <h2>Elden Ring</h2>
+                    <p>RPG de ação e aventura em mundo aberto.</p>
+                    <strong>R$ 359,90</strong>
+                </article>
 
-            <article>
-                <figure>
-                    <img src="imagens/er.jpg" alt="">
-                </figure>
-                <h2>Elden Ring</h2>
-                <p>RPG de ação e aventura em mundo aberto.</p>
-                <strong>R$ 359,90</strong>
-            </article>
+                <article>
+                    <figure>
+                        <img src="imagens/gtav.jpg" alt="">
+                    </figure>
+                    <h2>Grand Theft Auto V</h2>
+                    <p>Jogo de ação e aventura em mundo aberto.</p>
+                    <strong>R$ 359,90</strong>
+                </article>
 
-            <article>
-                <figure>
-                    <img src="imagens/gtav.jpg" alt="">
-                </figure>
-                <h2>Grand Theft Auto V</h2>
-                <p>Jogo de ação e aventura em mundo aberto.</p>
-                <strong>R$ 359,90</strong>
-            </article>
-
-        </section>
-    </section>
-
-    <section class="advertising-section">
-        <img src="imagens/fallguys.png" alt="">
-    </section>
-
-    <section class="developers-section">
-
-        <h1>Desenvolvedoras populares <i class="fa-solid fa-caret-right"></i></h1>
-
-        <section class="developers">
-            <img src="imagens/cap-logo-m.webp" alt="">
-            <img src="imagens/square-logo-m.webp" alt="">
-            <img src="imagens/rockstar-logo-m.webp" alt="">
-            <img src="imagens/ea-logo-m.webp" alt="">
-            <img src="imagens/ubi-logo-m.webp" alt="">
+            </section>
         </section>
 
-    </section>
-    
-    <section class="next-section">
+        <section class="advertising-section">
+            <img src="imagens/fallguys.png" alt="">
+        </section>
 
-        <h1>Próximos lançamentos <i class="fa-solid fa-caret-right"></i></h1>
+        <section class="developers-section">
 
-        <section class="next-releases">
+            <h1>Desenvolvedoras populares <i class="fa-solid fa-caret-right"></i></h1>
 
-            <img src="imagens/ds2.png" alt="">
-            <img src="imagens/gowr.png" alt="">
-            <img src="imagens/outlast.png" alt="">
-            <img src="imagens/dbd.png" alt="">
-            <img src="imagens/cs2.png" alt="">
-            <img src="imagens/dota2.png" alt="">
+            <section class="developers">
+                <img src="imagens/cap-logo-m.webp" alt="">
+                <img src="imagens/square-logo-m.webp" alt="">
+                <img src="imagens/rockstar-logo-m.webp" alt="">
+                <img src="imagens/ea-logo-m.webp" alt="">
+                <img src="imagens/ubi-logo-m.webp" alt="">
+            </section>
 
         </section>
 
-    </section>
+        <section class="next-section">
 
-</main>
+            <h1>Próximos lançamentos <i class="fa-solid fa-caret-right"></i></h1>
 
-<footer>
+            <section class="next-releases">
 
-    <section class="upperfooter">
+                <img src="imagens/ds2.png" alt="">
+                <img src="imagens/gowr.png" alt="">
+                <img src="imagens/outlast.png" alt="">
+                <img src="imagens/dbd.png" alt="">
+                <img src="imagens/cs2.png" alt="">
+                <img src="imagens/dota2.png" alt="">
 
-    <section class="credits">
-        <p>&copy; GSTOO. Todos os direitos reservados.</p>
-    </section>
-    
-</footer>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section class="upperfooter">
+
+            <section class="credits">
+                <p>&copy; GSTOO. Todos os direitos reservados.</p>
+            </section>
+
+    </footer>
 
 </body>
+
 </html>
